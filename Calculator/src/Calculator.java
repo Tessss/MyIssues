@@ -18,7 +18,7 @@ public class Calculator
 
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String input = br.readLine().trim();
+        String input = br.readLine().trim().replaceAll("\\s+","");
 
         String arr[] = input.split("\\W");
 
